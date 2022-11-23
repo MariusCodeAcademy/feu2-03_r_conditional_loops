@@ -3,6 +3,7 @@ import './App.css';
 import Icon from './components/UI/icon/Icon';
 import ArrayOfElements from './components/ArrayOfElements';
 import Navigation from './components/nav/Navigation';
+import { navData } from './assets/data';
 
 const colors = [
   { id: 1, value: 'red' }, // cObj
@@ -13,9 +14,10 @@ const colors = [
 ];
 
 function App() {
+  // console.log('navData ===', navData);
   return (
     <div className='App'>
-      <Navigation />
+      <Navigation navItems={navData} />
       <main className='container'>
         <h1>App</h1>
         {/* <Condition /> */}
