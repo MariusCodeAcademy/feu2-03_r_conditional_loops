@@ -1,13 +1,16 @@
 import './Navigation.css';
 import NavLink from './NavLink';
 
-function Navigation() {
+function Navigation(props) {
   // susikurti nauja komponenta
   return (
     <header className='mainHeader'>
       <nav className='container'>
-        <NavLink to='#home'>Home</NavLink>
-        <NavLink to='#about'>About</NavLink>
+        {props.navItems.map((nObj) => (
+          <NavLink key={nObj.id} to={nObj.to}>
+            {nObj.text}
+          </NavLink>
+        ))}
       </nav>
     </header>
   );
