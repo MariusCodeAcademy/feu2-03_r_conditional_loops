@@ -7,3 +7,6 @@
   background-color: #fff;
   color: #333;
 }
+.navLink.current {
+  border-bottom: 10px solid #fff;
+}

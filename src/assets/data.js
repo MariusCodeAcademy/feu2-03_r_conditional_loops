@@ -1,7 +1,7 @@
 export const navData = [
-  { id: 1, to: '#home', text: 'Welcome', active: false, icon: 'home' }, // === nObj
+  { id: 1, to: '#home', text: 'Welcome', active: true, icon: 'home' }, // === nObj
   { id: 2, to: '#about', text: 'About', active: false, icon: 'info-circle' },
-  { id: 3, to: '#contact', text: 'Contact', active: true, icon: 'envelope-open-o' },
+  { id: 3, to: '#contact', text: 'Contact', active: false, icon: 'envelope-open-o' },
 ];
 
 // exportuoti navData

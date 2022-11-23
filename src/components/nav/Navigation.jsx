@@ -7,7 +7,7 @@ function Navigation(props) {
     <header className='mainHeader'>
       <nav className='container'>
         {props.navItems.map((nObj) => (
-          <NavLink key={nObj.id} to={nObj.to}>
+          <NavLink key={nObj.id} to={nObj.to} icon={nObj.icon} isCurrent={nObj.active}>
             {nObj.text}
           </NavLink>
         ))}
