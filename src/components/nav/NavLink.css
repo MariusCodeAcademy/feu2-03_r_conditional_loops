@@ -1,3 +1,9 @@
 .navLink {
-  padding: 0, 8em 1.6em;
+  padding: 0.8em 1.6em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.navLink:hover {
+  background-color: #fff;
+  color: #333;
 }

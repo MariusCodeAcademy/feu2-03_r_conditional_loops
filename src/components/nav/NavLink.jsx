@@ -1,8 +1,10 @@
+import './NavLink.css';
+
 // susikurti nauja komponenta NavLink
-function NavLink() {
+function NavLink(props) {
   return (
-    <a className='navLink' href='#home'>
-      Home
+    <a className='navLink' href={props.to}>
+      {props.children}
     </a>
   );
 }
