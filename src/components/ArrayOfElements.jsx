@@ -1,4 +1,9 @@
-const colors = ['red', 'green', 'blue', 'yellow'];
+const colors = [
+  { id: 1, value: 'red' }, // cObj
+  { id: 2, value: 'green' },
+  { id: 3, value: 'blue' },
+  { id: 4, value: 'yellow' },
+];
 
 function ArrayOfElements() {
   const h2Styles = {
@@ -9,9 +14,13 @@ function ArrayOfElements() {
     <div>
       <h2 style={h2Styles}>ArrayOfElements</h2>
       <ul>
-        {colors.map((colorName) => {
+        {colors.map((cObj, i) => {
           // validation computation
-          return <li style={{ color: colorName }}>{colorName}</li>;
+          return (
+            <li key={cObj.id} style={{ color: cObj.value }}>
+              {cObj.value}
+            </li>
+          );
         })}
       </ul>
     </div>
