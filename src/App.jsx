@@ -1,6 +1,7 @@
 import Condition from './components/Condition';
 import './App.css';
 import Icon from './components/UI/icon/Icon';
+import ArrayOfElements from './components/ArrayOfElements';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         thermometer-full
       </Icon>
       {/* <Icon /> */}
+      <ArrayOfElements />
     </div>
   );
 }
