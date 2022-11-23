@@ -3,6 +3,14 @@ import './App.css';
 import Icon from './components/UI/icon/Icon';
 import ArrayOfElements from './components/ArrayOfElements';
 
+const colors = [
+  { id: 1, value: 'red' }, // cObj
+  { id: 2, value: 'green' },
+  { id: 3, value: 'blue' },
+  { id: 4, value: 'yellow' },
+  { id: 5, value: 'black' },
+];
+
 function App() {
   return (
     <div className='App container'>
@@ -16,7 +24,7 @@ function App() {
         thermometer-full
       </Icon>
       {/* <Icon /> */}
-      <ArrayOfElements />
+      <ArrayOfElements data={colors} />
     </div>
   );
 }

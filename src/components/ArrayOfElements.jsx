@@ -1,11 +1,11 @@
-const colors = [
-  { id: 1, value: 'red' }, // cObj
-  { id: 2, value: 'green' },
-  { id: 3, value: 'blue' },
-  { id: 4, value: 'yellow' },
-];
+// const colors = [
+//   { id: 1, value: 'red' }, // cObj
+//   { id: 2, value: 'green' },
+//   { id: 3, value: 'blue' },
+//   { id: 4, value: 'yellow' },
+// ];
 
-function ArrayOfElements() {
+function ArrayOfElements(props) {
   const h2Styles = {
     fontSize: '3rem',
     color: 'tomato',
@@ -14,7 +14,7 @@ function ArrayOfElements() {
     <div>
       <h2 style={h2Styles}>ArrayOfElements</h2>
       <ul>
-        {colors.map((cObj, i) => {
+        {props.data.map((cObj, i) => {
           // validation computation
           return (
             <li key={cObj.id} style={{ color: cObj.value }}>
