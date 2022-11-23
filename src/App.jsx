@@ -7,9 +7,13 @@ function App() {
     <div className='App container'>
       <h1>App</h1>
       {/* <Condition /> */}
-      <Icon color='dark'>thermometer-quarter</Icon>
-      <Icon color='light'>thermometer-half</Icon>
-      <Icon size='lg'>thermometer-full</Icon>
+      <Icon dark color='dark'>
+        thermometer-quarter
+      </Icon>
+      <Icon dark>thermometer-half</Icon>
+      <Icon dark size='lg'>
+        thermometer-full
+      </Icon>
       {/* <Icon /> */}
     </div>
   );
