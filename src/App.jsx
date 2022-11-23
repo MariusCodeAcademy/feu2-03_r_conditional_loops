@@ -8,6 +8,9 @@ function App() {
       <h1>App</h1>
       {/* <Condition /> */}
       <Icon>thermometer-quarter</Icon>
+      <Icon>thermometer-half</Icon>
+      <Icon size='lg'>thermometer-full</Icon>
+      {/* <Icon /> */}
     </div>
   );
 }
