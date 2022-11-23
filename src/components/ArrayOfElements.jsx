@@ -10,11 +10,12 @@ function ArrayOfElements(props) {
     fontSize: '3rem',
     color: 'tomato',
   };
+
   return (
     <div>
       <h2 style={h2Styles}>ArrayOfElements</h2>
       <ul>
-        {props.data.map((cObj, i) => {
+        {props.data.map((cObj) => {
           // validation computation
           return (
             <li key={cObj.id} style={{ color: cObj.value }}>
